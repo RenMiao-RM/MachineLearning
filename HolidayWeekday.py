@@ -28,4 +28,5 @@ for index, row in trainData.iterrows():
     trainData.set_value(index, 'weekday', weekday)
     trainData.set_value(index, 'isHoliday', isHoliday)
 
-trainData.to_csv(saveFile)
+print(trainData)
+# trainData.to_csv(saveFile)

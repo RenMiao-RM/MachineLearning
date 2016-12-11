@@ -33,7 +33,7 @@ for i in range(0, lens):
     else:
         trainDataNoZero = trainDataNoZero.append(tempRow)
 
-# print(trainDataNoZero)
+print(trainDataNoZero)
 # trainDataNoZero.to_csv(trainFileNoZero)
 
 
