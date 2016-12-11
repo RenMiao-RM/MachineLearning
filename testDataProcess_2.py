@@ -1,4 +1,4 @@
-# Add weather information intot the test file
+# Add weather information into the test file
 
 import pandas as pd
 
