@@ -1,7 +1,7 @@
 import pandas as pd
 
-inputFile = 'Data/presubmit_0.csv'
-outputFile = 'Data/submit_2.csv'
+inputFile = 'Data/submit_knn_21.csv'
+outputFile = 'Data/submit_knn_21.csv'
 
 inputData = pd.read_csv(inputFile)
 # inputData = inputData.drop('Unnamed: 0', 1)

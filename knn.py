@@ -5,7 +5,7 @@ from sklearn import neighbors
 import pandas as pd
 testFile = 'Data/testProcessed_3.csv'
 trainFile = 'Data/finalTrain_1.csv'
-outputFile = 'Data/submit_0.csv'
+outputFile = 'Data/submit_knn_21.csv'
 
 testData = pd.read_csv(testFile)
 testData['days'] = (pd.to_datetime(testData['date']) - pd.to_datetime('2012/3/17')).dt.days
@@ -28,7 +28,7 @@ for index, row in testData.iterrows():
         trainRows = trainData[(trainData['store_nbr'] == storeNum) & (trainData['item_nbr'] == itemNum)]
         dict[tuple] = trainRows
     # print(trainRows)
-    knn = neighbors.KNeighborsRegressor(n_neighbors=7)
+    knn = neighbors.KNeighborsRegressor(n_neighbors=21)
     feature_cols = ['days']
     trainRows['log1p'] = np.log(trainRows['units'] + 1)
     lable_col = ['log1p']

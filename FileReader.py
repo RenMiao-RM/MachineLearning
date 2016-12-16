@@ -6,7 +6,7 @@ trainFileNoZero = "Data/trainNoZero.csv"
 
 trainData = pd.read_csv(trainFile)
 # testData = pd.read_csv(testFile)
-# print(trainData)
+print(trainData)
 
 g = trainData.groupby(["store_nbr", "item_nbr"])['units'].mean()
 g = g[g > 0]
